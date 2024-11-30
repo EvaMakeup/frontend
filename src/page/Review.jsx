@@ -11,7 +11,7 @@ export function Review() {
 
     useEffect(()=>{
        const fetchdata = async () => {
-         const data = await fetch('http://127.0.0.1:8000/list-reviews')
+         const data = await fetch('https://evamakeup.pythonanywhere.com/list-reviews')
          const response = await data.json();
          console.log(response)
          setreviews(response)
@@ -24,7 +24,7 @@ export function Review() {
         
     console.log(data)
       
-      let result = await fetch('http://127.0.0.1:8000/submit-review/', {
+      let result = await fetch('https://evamakeup.pythonanywhere.com/submit-review/', {
         method: 'POST',
         body: JSON.stringify(data),
         headers:{
