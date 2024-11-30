@@ -40,7 +40,7 @@ Welcome to the **EVA Makeup** website repository. This is a React-based frontend
 ### 7. **Contact**
    - **Phone**: +91-9689-077-200 / +91-8805-898-806
    - **Email**: farah.makeupingoa@gmail.com
-   - **Address**: Eva Hair And Beauty Salon, Shop No-3, Rajesh Apartment, Shirvodem, Margao, Goa.
+   - **Address**: Eva Hair And Beauty Salon, Shop No-3, Rajesh Apartment, Shirvodem, Margao, Goa
 
 ## Technologies Used
 - **React.js**: For building the frontend interface.
