@@ -24,7 +24,7 @@ export function Review() {
         
     console.log(data)
       
-      let result = await fetch('https://evamakeup.pythonanywhere.com/submit-review/', {
+      let result = await fetch('https://evamakeup.pythonanywhere.com/submit-review', {
         method: 'POST',
         body: JSON.stringify(data),
         headers:{
