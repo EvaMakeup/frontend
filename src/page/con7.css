@@ -1,0 +1,333 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Page Layout */
+  .eva {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #4d4037;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff5e5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  /* Section 1 Styling */
+  .sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff5e5;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .sec1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: radial-gradient(circle, #ffecd2 0%, #fff5e5 60%);
+    z-index: -1;
+    animation: rotateBackground 8s linear infinite;
+  }
+  
+  .sec1-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .sec1-text {
+    flex: 1 1 45%;
+    padding: 20px;
+    animation: fadeInLeft 2s ease-in-out;
+  }
+  
+  .sec1 h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #4d4037;
+    letter-spacing: 2px;
+    animation: textPop 1.5s ease-in-out;
+  }
+  
+  .sec1 p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #4d4037;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .btn-discover {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-discover:hover {
+    background-color: #4d4037;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sec1-image {
+    flex: 1 1 45%;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInRight 2s ease-in-out;
+  }
+  
+  .sec1-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  
+  
+  
+  
+  .sec1-subtitle {
+    font-size: 1.8rem;
+    margin: 30px 0;
+    color: #4d4037;
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  .sec1-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Section Details */
+  .sec1-dtl {
+    background-color: #ff6b6b;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 2s ease-in-out;
+  }
+  
+  .sec1-dtl p {
+    color: black;
+    line-height: 1.8;
+    margin: 20px 0;
+  }
+  
+  /* Gallery Section */
+  .sec1-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .sec1-gallery h2 {
+    font-size: 2.5rem;
+    color: #4d4037;
+    margin-bottom: 20px;
+    animation: textPop 1.5s ease-in-out;
+  }
+  
+  .sec1-gallery p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .gallery-grid {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 90%;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes textPop {
+    0% {
+        letter-spacing: -2px;
+        opacity: 0;
+    }
+    100% {
+        letter-spacing: 2px;
+        opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sec1-content {
+        flex-direction: column;
+    }
+  
+    .sec1 h1 {
+        font-size: 2rem;
+    }
+  
+    .sec1 p,
+    .btn-discover {
+        font-size: 1rem;
+    }
+  
+    .sec1-image img {
+        max-width: 80%;
+    }
+  
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sec1 h1 {
+        font-size: 1.5rem;
+    }
+  
+    .btn-discover {
+        padding: 10px 20px;
+    }
+  
+    .gallery-grid {
+        gap: 0.5rem;
+    }
+  
+    .gallery-item img {
+        aspect-ratio: 1 / 1;
+    }
+  }
+  

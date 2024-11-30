@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pt-5 {
+    padding-top: 3rem !important;
+  }
+  
+  .pb-5 {
+    padding-bottom: 3rem !important;
+  }
+  
+  .card-columns {
+    column-count: 3;
+    column-gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-columns {
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+  
+  .card {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .fa-quote-right {
+    color: #007bff;
+    float: right;
+  }
+  
+  .text-muted {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* New Review Form Styles */
+  .review-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .review-form label {
+    font-weight: bold;
+  }
+  
+  .review-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  .review-form .btn {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .review-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container spacing adjustments */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (max-width: 576px) {
+    .review-form {
+      padding: 1rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .card-columns {
+      column-count: 4;
+    }
+  }
+  
