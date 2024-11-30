@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# EVA Makeup - Frontend React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Welcome to the **EVA Makeup** website repository. This is a React-based frontend application for a professional makeup services website. It provides an elegant and intuitive interface to showcase services, portfolio, gallery, customer reviews, and more.
 
-## Available Scripts
+## Features
+- **Logo & Navigation**: Easy navigation through sections like Home, Services, About, Portfolio, Gallery, Reviews, and Contact.
+- **Hero Section with Slideshow**: Beautiful image carousel to capture attention.
+- **Our Services**: Highlighted services including Bridal Makeup, Pre-Wedding Looks, Mehndi Design, Party Makeup, and more.
+- **About Us**: A personal touch showcasing the expertise and passion of the makeup artist.
+- **Gallery**: Collection of stunning visuals of makeup artistry.
+- **Reviews**: Testimonials from happy clients.
+- **Contact Information**: Easy access to reach out via phone, email, or address.
 
-In the project directory, you can run:
+## Sections
+### 1. **Home**
+   - Welcoming hero section with a professional slideshow.
+   - Highlights the beauty and expertise of EVA Makeup.
 
-### `npm start`
+### 2. **Services**
+   - **Bridal Makeup**: Timeless beauty for your big day.
+   - **Pre-Wedding Looks**: Romantic to glamorous styles tailored to perfection.
+   - **Mehndi Design**: Artistic and personalized henna designs for every celebration.
+   - **Party Makeup**: Transformative looks for any occasion.
+   - **Nail Art, Foot Massage & Tattoos**: Pampering and styling services.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. **About**
+   - A warm introduction to **Farah Malik**, a makeup artist with over 9 years of experience.
+   - Insight into the philosophy and passion behind the artistry.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. **Portfolio**
+   - Showcasing professional work across various services.
 
-### `npm test`
+### 5. **Gallery**
+   - A collection of high-quality visuals to inspire clients.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 6. **Reviews**
+   - Testimonials from satisfied customers reflecting their experiences.
 
-### `npm run build`
+### 7. **Contact**
+   - **Phone**: +91-9689-077-200 / +91-8805-898-806
+   - **Email**: farah.makeupingoa@gmail.com
+   - **Address**: Eva Hair And Beauty Salon, Shop No-3, Rajesh Apartment, Shirvodem, Margao, Goa.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+- **React.js**: For building the frontend interface.
+- **React Router**: For smooth navigation between pages.
+- **CSS/SCSS**: For styling and design.
+- **React-Slick**: For creating the carousel/slideshow.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
+This application is deployed on **Vercel**. For deployment instructions, visit [Vercel Documentation](https://vercel.com/docs).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
+If you have any questions, feel free to reach out:
+- **Farah Malik**: farah.makeupingoa@gmail.com
+- **Phone**: +91-9689-077-200 / +91-8805-898-806
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2024 EVA Makeup | Built with ❤️
