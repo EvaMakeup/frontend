@@ -84,13 +84,16 @@ const Main = () => {
           <h4>From Casual Chic to Red-Carpet Ready!</h4>
           
         </div>
-      </section>
+      </section>PRE-WEDDING LOOKS
 
       <section className="content-section3">
         <div className="content3-left">
           <h3>Get Camera-Ready with Flawless Looks for Your Big Moments.</h3>
           <h4>From Romantic to Glamorous – We Create Your Perfect Pre-Wedding Look.</h4>
-          <p><a href="content-section3.html">PRE-WEDDING LOOKS</a></p>
+         <Link to="/page3">
+            <img src="./imga/con2.png" alt="service1" />
+            <h4>PRE-WEDDING LOOKS</h4>
+            </Link>
         </div>
        
 
