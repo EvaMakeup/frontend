@@ -56,7 +56,6 @@ export function Review() {
         <div className="row">
           <div className="col-12">
             <h2 className="mb-2 text-center">What people say</h2>
-            
           </div>
           <div className="col-12">
             <div className="card-columns">
