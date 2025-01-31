@@ -2,37 +2,54 @@ import React, { useEffect, useState } from "react";
 import "./Review.css";
 
 export function Review() {
-    const[data , setData] = useState({
-      name: "",
-      review_text: ""
-    })
+  const [data, setData] = useState({
+    name: "",
+    review_text: "",
+  });
 
-    const[Testimonial , setreviews] = useState('')
+  const [Testimonial, setreviews] = useState("");
 
-    useEffect(()=>{
-       const fetchdata = async () => {
-         const data = await fetch('https://evamakeup.pythonanywhere.com/list-reviews')
-         const response = await data.json();
-         console.log(response)
-         setreviews(response)
-       }
-       fetchdata();
-    },[])
-    const HandleSubmit = async (e) => {
-        e.preventDefault();
-        window.location.reload();
-        
-    console.log(data)
-      
-      let result = await fetch('https://evamakeup.pythonanywhere.com/submit-review/', {
-        method: 'POST',
+  useEffect(() => {
+    const fetchdata = async () => {
+      const data = await fetch(
+        "https://evamakeup.pythonanywhere.com/list-reviews"
+      );
+      const response = await data.json();
+      setreviews(response);
+    };
+    fetchdata();
+  }, []);
+
+  const HandleSubmit = async (e) => {
+    e.preventDefault();
+    // window.location.reload();
+
+    console.log(data);
+
+    let result = await fetch(
+      "https://evamakeup.pythonanywhere.com/submit-review/",
+      {
+        method: "POST",
         body: JSON.stringify(data),
-        headers:{
-            'Content-Type':'application/json'
-        }
-      })
-      result = await result.json();
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (result.ok) {
+      const response = await result.json();
+      console.log(response, "Review Submitted");
+
+      setreviews((prevReviews) => ({
+        ...prevReviews,
+        reviews: [...prevReviews.reviews, data],
+      }));
+
+    } else {
+      console.log("Error submitting review:", result.statusText);
     }
+  };
   return (
     <section className="pt-5 pb-5">
       <div className="container">
@@ -52,9 +69,7 @@ export function Review() {
                         aria-hidden="true"
                       ></i>
                       <h2>{x.name}</h2>
-                      <p className="m-0 text-muted">
-                        {x.review_text}
-                      </p>
+                      <p className="m-0 text-muted">{x.review_text}</p>
                     </blockquote>
                   </div>
                 </div>
@@ -67,7 +82,12 @@ export function Review() {
         <div className="row mt-5">
           <div className="col-12">
             <h2 className="mb-3 text-center">Submit Your Review</h2>
-            <form className="review-form" onSubmit={(e)=>{HandleSubmit(e)}}>
+            <form
+              className="review-form"
+              onSubmit={(e) => {
+                HandleSubmit(e);
+              }}
+            >
               <div className="form-group">
                 <label htmlFor="name">Your Name</label>
                 <input
@@ -75,7 +95,7 @@ export function Review() {
                   id="name"
                   className="form-control"
                   placeholder="Enter your name"
-                  onChange={(e)=>setData({...data , name: e.target.value})}
+                  onChange={(e) => setData({ ...data, name: e.target.value })}
                 />
               </div>
               <div className="form-group">
@@ -85,10 +105,12 @@ export function Review() {
                   className="form-control"
                   placeholder="Write your review here"
                   rows="4"
-                  onChange={(e)=>setData({...data , review_text: e.target.value})}
+                  onChange={(e) =>
+                    setData({ ...data, review_text: e.target.value })
+                  }
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary" >
+              <button type="submit" className="btn btn-primary">
                 Send Review
               </button>
             </form>
