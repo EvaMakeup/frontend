@@ -57,7 +57,11 @@ const Main = () => {
         <div className="content3-left">
           <h3>Bridal Beauty, Tailored Just for You. Where Every Bride Shines Brightest.</h3>
           <h4>Timeless Beauty for Your Timeless Moment.</h4>
-          <p>BRIDAL MAKEUP</p>
+          <Link to="/page2">
+            <img src="./imga/con1.png" alt="service2" />
+            <h4>BRIDAL MAKEUP</h4>
+            </Link>
+            
         </div>
        
 
