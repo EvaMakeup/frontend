@@ -84,7 +84,7 @@ const Main = () => {
           <h4>From Casual Chic to Red-Carpet Ready!</h4>
           
         </div>
-      </section>PRE-WEDDING LOOKS
+      </section>
 
       <section className="content-section3">
         <div className="content3-left">
@@ -116,7 +116,9 @@ const Main = () => {
         <div className="content4-right">
           <h3>Adorn Your Hands with Stories in Henna. Mehndi Magic for Every Celebration.</h3>
           <h4>Henna That Captures Your Unique Style.</h4>
-          <p><a href="content-section4.html">MEHNDI DESIGN</a></p>
+           <Link to="/page5">
+            <p>MEHNDI DESIGN</p>
+            </Link>
         </div>
       </section>
 
@@ -146,7 +148,9 @@ const Main = () => {
         <div className="content6-right">
           <h3>Nail the Perfect Look, Every Time!</h3>
           <h4>Relax, Rejuvenate, Revitalize. Pamper Yourself with Pure Bliss.</h4>
-          <p><a href="content-section6.html">NAIL ART, FOOT MASSAGE AND TEMPORARY TATTOOS</a></p>
+          <img src="./imga/con6.png" alt="service6" />
+            <h4>NAIL ART, FOOT MASSAGE AND TEMPORARY TATTOOS</h4>
+          </Link>
         </div>
       </section>
     </div>
