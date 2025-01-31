@@ -205,6 +205,7 @@ const Main = () => {
     <img src="./imga/gal5.jpg" className="gallery" alt="Gallery 5" />
     <img src="./imga/gal6.jpg" className="gallery" alt="Gallery 6" />
     <img src="./imga/gal7.jpg" className="gallery" alt="Gallery 7" />
+    <img src="./imga/img4.jpg" className="gallery" alt="Gallery 8" />
   </div>
 
 </div>
