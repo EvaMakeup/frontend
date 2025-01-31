@@ -85,6 +85,9 @@ const Main = () => {
         <div className="content2-right">
           <h3>Unlock the Magic of Perfect Hairdays Curls, Waves, and Everything in Between!</h3>
           <h4>From Casual Chic to Red-Carpet Ready!</h4>
+           <Link to="/page3">
+            <h4>HAIRSTYLING</h4>
+            </Link>
           
         </div>
       </section>
@@ -93,8 +96,8 @@ const Main = () => {
         <div className="content3-left">
           <h3>Get Camera-Ready with Flawless Looks for Your Big Moments.</h3>
           <h4>From Romantic to Glamorous – We Create Your Perfect Pre-Wedding Look.</h4>
-         <Link to="/page3">
-            <p>PRE-WEDDING LOOKS</p>
+         <Link to="/page4">
+            <h4>PRE-WEDDING LOOKS</h4>
             </Link>
         </div>
        
@@ -120,7 +123,7 @@ const Main = () => {
           <h3>Adorn Your Hands with Stories in Henna. Mehndi Magic for Every Celebration.</h3>
           <h4>Henna That Captures Your Unique Style.</h4>
            <Link to="/page5">
-            <p>MEHNDI DESIGN</p>
+            <h4>MEHNDI DESIGN</h4>
             </Link>
         </div>
       </section>
@@ -129,7 +132,9 @@ const Main = () => {
         <div className="content5-left">
           <h3>Unveil Your Inner Diva! Party-Perfect Looks, Crafted With Love.</h3>
           <h4>Where Makeup Becomes Art.</h4>
-          <p><a href="content-section5.html">PARTY MAKEUP</a></p>
+         <Link to="/Page6">
+            <h4>PARTY MAKEUP</h4>
+          </Link>
         </div>
 
         <div className="content5-right">
