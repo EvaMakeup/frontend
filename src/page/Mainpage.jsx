@@ -91,8 +91,7 @@ const Main = () => {
           <h3>Get Camera-Ready with Flawless Looks for Your Big Moments.</h3>
           <h4>From Romantic to Glamorous – We Create Your Perfect Pre-Wedding Look.</h4>
          <Link to="/page3">
-            <img src="./imga/con2.png" alt="service1" />
-            <h4>PRE-WEDDING LOOKS</h4>
+            <p>PRE-WEDDING LOOKS</p>
             </Link>
         </div>
        
