@@ -205,8 +205,7 @@ const Main = () => {
       <div className="container">
         <div className="intro">
           <p className="text-center">
-            Our customers love us! Read what they have to say below. Aliquam sed justo ligula. Vestibulum nibh erat,
-            pellentesque ut laoreet vitae.
+            Our customers love us! Read what they have to say below.
           </p>
         </div>
         <div className="row people">
