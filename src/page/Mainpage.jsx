@@ -151,7 +151,7 @@ const Main = () => {
         <div className="content6-right">
           <h3>Nail the Perfect Look, Every Time!</h3>
           <h4>Relax, Rejuvenate, Revitalize. Pamper Yourself with Pure Bliss.</h4>
-          <img src="./imga/con6.png" alt="service6" />
+           <Link to="/Page7">
             <h4>NAIL ART, FOOT MASSAGE AND TEMPORARY TATTOOS</h4>
           </Link>
         </div>
