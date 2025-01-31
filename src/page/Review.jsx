@@ -15,6 +15,8 @@ export function Review() {
         "https://evamakeup.pythonanywhere.com/list-reviews"
       );
       const response = await data.json();
+      console.log(response, "fetched reviews");
+
       setreviews(response);
     };
     fetchdata();
@@ -24,7 +26,7 @@ export function Review() {
     e.preventDefault();
     // window.location.reload();
 
-    console.log(data);
+    console.log(data, 'sent data');
 
     let result = await fetch(
       "https://evamakeup.pythonanywhere.com/submit-review/",
@@ -43,7 +45,7 @@ export function Review() {
 
       setreviews((prevReviews) => ({
         ...prevReviews,
-        reviews: [...prevReviews.reviews, data],
+        reviews: [...prevReviews.reviews, {'SUJOY MODAK' : data.name , 'nice' : data.review_text}],
       }));
 
     } else {
@@ -56,6 +58,7 @@ export function Review() {
         <div className="row">
           <div className="col-12">
             <h2 className="mb-2 text-center">What people say</h2>
+            <p className="mb-5 text-center">Masonry testimonial cards grid</p>
           </div>
           <div className="col-12">
             <div className="card-columns">
@@ -67,8 +70,8 @@ export function Review() {
                         className="fa fa-quote-right fa-2x text-muted pull-right mt-3 mb-3"
                         aria-hidden="true"
                       ></i>
-                      <h2>{x.name}</h2>
-                      <p className="m-0 text-muted">{x.review_text}</p>
+                      <h2>{x['SUJOY MODAK']}</h2>
+                      <p className="m-0 text-muted">{x['nice']}</p>
                     </blockquote>
                   </div>
                 </div>
