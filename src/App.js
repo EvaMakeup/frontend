@@ -82,6 +82,8 @@ const App = () => {
             <li><a href="#galaery">Gallery</a></li>
             <li><a href="#testimonials-clean">Review</a></li>
             <li><a href="#foot">Contact</a></li>
+            <li><a href="https://www.instagram.com/makeupingoa?utm_source=qr&igsh=MWkzcWhyc2ZpaGZiNQ==">Instagram/a></li>
+            <li><a href="https://www.facebook.com/share/19v77XZxRU/?mibextid=qi2Omg">Facebook/a></li>
           </ul>
         </div>
         <div className="g-i-t">
